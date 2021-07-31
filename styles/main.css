@@ -1,0 +1,135 @@
+/* colors */
+/* fonts */
+html, body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-size: 10px;
+  overflow: scroll;
+}
+
+* {
+  box-sizing: border-box;
+}
+*:active, *:hover, *:focus {
+  webkit-tap-highlight-color: transparent;
+  tap-highlight-color: transparent;
+  outline: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.buttons {
+  display: flex;
+  max-width: 450px;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 20px auto;
+  padding: 10px;
+}
+.buttons button {
+  font-size: 2rem;
+  padding: 0.25em 0.5em;
+  min-width: 100px;
+  background-color: #00003d;
+  border-radius: 0.2em;
+  color: white;
+  border: 1px solid #00003d;
+}
+.buttons button:active {
+  background-color: #000099;
+}
+
+/* colors */
+/* fonts */
+.bars-container {
+  background-color: #00003d;
+  height: 370px;
+  margin: 20px 5px;
+  padding: 10px 10px 40px 10px;
+  border-radius: 0.5em;
+}
+
+.bars-wrapper {
+  /* border: 1px solid $light; */
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.bars {
+  background-color: #b3b3b3;
+  position: absolute;
+  color: white;
+  display: flex;
+  justify-content: center;
+  transition: left 0.2s ease;
+}
+.bars::before {
+  content: attr(data-value);
+  position: absolute;
+  bottom: -15px;
+}
+
+/* colors */
+/* fonts */
+#customs {
+  /* border: 1px solid red; */
+  border-radius: 0.25em;
+  background-color: #00003d;
+  color: white;
+  font-size: 1.6rem;
+  padding: 20px 10px;
+  margin: 20px 0;
+  width: 95%;
+  max-width: 450px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  /* border-radius: .25em; */
+  overflow: hidden;
+  /* border: 1px solid white; */
+}
+
+tr, td {
+  border: 1px solid white;
+  /* border-radius: .35em; */
+  padding: 0.4em;
+}
+
+input {
+  height: 100%;
+  min-height: 40px;
+  padding: 10px 5px;
+  font-family: Times New Roman;
+  font-weight: bold;
+  width: 100%;
+  border: 1px solid #00003d;
+  border-radius: 0.25em;
+}
+
+#set-value {
+  margin-top: 10px;
+  width: 100%;
+  font-size: 1em;
+  padding: 0.4em 0.7em;
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  border-radius: 0.3em;
+  font-weight: bold;
+}
+#set-value:active {
+  background-color: white;
+  color: #00003d;
+}
+
+/*# sourceMappingURL=main.css.map */

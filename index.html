@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Sort Visualizer</title>
+  <link rel="stylesheet" href="styles/main.css" type="text/css" media="all" />
+  <script src="scripts/eruda.js" type="text/javascript" charset="utf-8" onload="eruda.init()"></script>
+</head>
+<body>
+  <main class="bars-container">
+    <div class="bars-wrapper" id="bars-wrapper">
+      
+    </div>
+  </main>
+  <div class="buttons">
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+  </div>
+  <section id="customs">
+    <table>
+      <tr>
+        <td>
+          <label for="arr_size">Total Numbers</label>
+        </td>
+        <td>
+          <input type="number" id="arr_size" placeholder="Greater than 0"/>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="speed">Animation Speed</label>
+        </td>
+        <td>
+          <input type="number" id="speed" placeholder="In Milliseconds"/>
+        </td>
+      </tr>
+    </table>
+    <button id="set-value">
+      Set Values
+    </button>
+  </section>
+</body>
+
+
+<script src="scripts/functions.js" type="text/javascript" charset="utf-8"></script>
+<script src="scripts/render-bars.js" type="text/javascript" charset="utf-8"></script>
+<script src="scripts/main.js" type="text/javascript" charset="utf-8"></script>
+</html>

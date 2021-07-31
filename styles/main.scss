@@ -1,0 +1,49 @@
+@import 'store';
+
+html,body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-size: 10px;
+  overflow: scroll;
+}
+
+* {
+  box-sizing: border-box;
+  
+  &:active,&:hover,&:focus {
+    webkit-tap-highlight-color: transparent;
+    tap-highlight-color: transparent;
+    outline: none;
+  }
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.buttons {
+  display: flex;
+  max-width: 450px;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 20px auto;
+  padding: 10px;
+  button {
+    font-size: 2rem;
+    padding: .25em .5em;
+    min-width: 100px;
+    background-color: $dark;
+    border-radius: .2em;
+    color: $light;
+    border: 1px solid $dark;
+    
+    &:active {
+      background-color: $dark-less;
+    }
+  }
+}
+
+@import 'bars';
+@import 'customs';
