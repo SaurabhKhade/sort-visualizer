@@ -1,2 +1,2 @@
-*.scss
-*.map
+/styles/*.scss
+/styles/*.map
