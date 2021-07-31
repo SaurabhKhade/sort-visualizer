@@ -17,6 +17,7 @@ export default async function bubble(numbers,speed) {
         numbers[j] = numbers[j+1];
         numbers[j+1] = temp;
         
+        beep();
         swapBars(bars,j,j+1);
         
         await wait(speed);
@@ -27,6 +28,6 @@ export default async function bubble(numbers,speed) {
     
     bars[i].style.backgroundColor = 'green';
   }
-  await wait(3000);
+  await wait(1000);
   resetAll(bars);
 }
