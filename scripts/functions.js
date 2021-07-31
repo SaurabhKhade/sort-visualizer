@@ -55,3 +55,9 @@ function setBtnText(text) {
 function clearBars() {
   document.querySelector('#bars-wrapper').innerHTML = '';
 }
+
+let audio = new Audio('../audio/beep.mp3');
+
+function beep() {
+  audio.play();
+}
