@@ -1,9 +1,9 @@
 let size = 10;
 let numbers = random(size);
 renderBars(numbers);
-let speed = 400;
+let speed = 600;
 let sortCondition = 0;
-let algo = 'bubble';
+let algo = 'selection';
 let error = false;
 
 document.querySelector('#stop').addEventListener('click',async ()=>{
