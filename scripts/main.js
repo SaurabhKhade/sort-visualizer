@@ -3,7 +3,7 @@ let numbers = random(size);
 renderBars(numbers);
 let speed = 600;
 let sortCondition = 0;
-let algo = 'selection';
+let algo = 'bubble';
 let error = false;
 
 document.querySelector('#stop').addEventListener('click',async ()=>{
@@ -55,3 +55,14 @@ document.querySelector("#set-value").addEventListener('click',()=>{
   if(anm_speed)
     speed = anm_speed;
 })
+
+let algoButtons = document.querySelectorAll('.algos .button');
+algoButtons.forEach(tag=>{
+  tag.addEventListener('click',()=>{
+    algoButtons.forEach(tag=>{
+      tag.classList.remove('selected');
+    });
+    tag.classList.add('selected');
+    algo = tag.getAttribute('data-algo');
+  });
+});

@@ -45,5 +45,22 @@ a {
   }
 }
 
+header,footer {
+  background-color: $dark;
+  color: $light;
+  text-align: center;
+  padding: 20px 10px;
+  
+  h1 {
+    margin: 0;
+    font-size: 3rem;
+  }
+}
+
+footer h1 {
+  font-size: 1.6rem;
+}
+
 @import 'bars';
 @import 'customs';
+@import 'algoButtons';

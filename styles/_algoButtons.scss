@@ -1,0 +1,23 @@
+@import 'store';
+
+.algos {
+  /* border: 1px solid red; */
+  padding: 20px 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  
+  .button {
+    background-color: $dark;
+    color: $light;
+    font-size: 1.4rem;
+    font-weight: bold;
+    padding: .6em .4em;
+    border: 1px solid $dark;
+    border-radius: .25em;
+  }
+  
+  .selected {
+    background-color: $dark-less;
+  }
+}

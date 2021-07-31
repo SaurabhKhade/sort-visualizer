@@ -26,6 +26,12 @@ function removeColor(bars,...rest) {
   })
 }
 
+function setAll(bars) {
+  bars.forEach(tag=>{
+    tag.style.backgroundColor = 'green';
+  })
+}
+
 function resetAll(bars) {
   bars.forEach(tag=>{
     tag.style.backgroundColor = 'hsl(0,0%,70%)';
@@ -58,4 +64,8 @@ function clearBars() {
 
 function beep() {
   document.querySelector("#beep").play();
+}
+
+function finish() {
+  document.querySelector("#finish").play();
 }

@@ -23,10 +23,15 @@ export default async function Selection(numbers,speed) {
     let temp = numbers[i];
     numbers[i] = numbers[min];
     numbers[min] = temp;
+    beep();
     swapBars(bars,i,min);
     bars[i].style.backgroundColor = 'green';
     await wait(speed);
+    if (error) {
+      return new Error('Stopped');
+    }
   }
-  await wait(1000);
+  finish();
+  await wait(2000);
   resetAll(bars);
 }
