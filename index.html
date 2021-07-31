@@ -5,12 +5,45 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Sort Visualizer</title>
+  <meta name='description' content='See how the various sorting algorithms work with help of animation of bars.'>
+  <meta name='theme-color' content='#00003d'>
+
+  <link rel='apple-touch-icon' href='images/favicon.png' />
+  <link rel='icon' type='image/png'href='images/favicon.png' />
+  <link rel='shortcut icon' href='images/favicon.png' type="image/png" />
+
+  <meta name='twitter:card' content='summary'>
+  <meta name='twitter:url' content='https://saurabhkhade.github.io/sort-visualizer'>
+  <meta name='twitter:title' content='Sort Visualizer'>
+  <meta name='twitter:description' content='See how the various sorting algorithms work with help of animation of bars.'>
+  <meta name='twitter:image' content='https://saurabhkhade.github.io/sort-visualizer/images/favicon.png'>
+  <meta name='twitter:creator' content='@_saurabh_khade'>
+  <meta property='og:type' content='website'>
+  <meta property='og:title' content='Sort Visualizer'>
+  <meta property='og:description' content='See how the various sorting algorithms work with help of animation of bars.'>
+  <meta property='og:site_name' content='Sort Visualizer'>
+  <meta property='og:url' content='https://saurabhkhade.github.io/sort-visualizer'>
+  <meta property='og:image' content='https://saurabhkhade.github.io/sort-visualizer/images/favicon.png'>
   <link rel="stylesheet" href="styles/main.css" type="text/css" media="all" />
 </head>
 <body>
+  <header>
+    <h1>Sort Visualizer</h1>
+  </header>
+  <div class="algos">
+    <button class="button selected" data-algo="bubble">
+      Bubble Sort
+    </button>
+    <button class="button" data-algo="selection">
+      Selection Sort
+    </button>
+    <button class="button" data-algo="insertion">
+      Insertion Sort
+    </button>
+  </div>
   <main class="bars-container">
     <div class="bars-wrapper" id="bars-wrapper">
-      
+
     </div>
   </main>
   <div class="buttons">
@@ -24,7 +57,7 @@
           <label for="arr_size">Total Numbers</label>
         </td>
         <td>
-          <input type="number" id="arr_size" placeholder="Greater than 0"/>
+          <input type="number" id="arr_size" placeholder="Greater than 0" />
         </td>
       </tr>
       <tr>
@@ -32,7 +65,7 @@
           <label for="speed">Animation Speed</label>
         </td>
         <td>
-          <input type="number" id="speed" placeholder="In Milliseconds"/>
+          <input type="number" id="speed" placeholder="In Milliseconds" />
         </td>
       </tr>
     </table>
@@ -40,7 +73,11 @@
       Set Values
     </button>
   </section>
-  <audio src="audio/beep.mp3" type="audio/mp3" id="beep" />
+  <footer>
+    <h1>By: Mr. Saurabh Khade</h1>
+  </footer>
+  <audio src="audio/beep.mp3" type="audio/mp3" id="beep"></audio>
+  <audio src="audio/finish.mp3" type="audio/mp3" id="finish"></audio>
 </body>
 
 

@@ -4,9 +4,6 @@ export default async function bubble(numbers,speed) {
   
   for(let i=numbers.length-1; i>=0; i--) {
     for(let j=0; j<i; j++) {
-      if (error) {
-        return new Error('Stopped');
-      }
       setColor(bars,j,j+1);
       await wait(speed);
       if (error) {
@@ -21,6 +18,9 @@ export default async function bubble(numbers,speed) {
         swapBars(bars,j,j+1);
         
         await wait(speed);
+        if (error) {
+          return new Error('Stopped');
+        }
       }
       
       removeColor(bars,j,j+1);
@@ -28,6 +28,7 @@ export default async function bubble(numbers,speed) {
     
     bars[i].style.backgroundColor = 'green';
   }
-  await wait(1000);
+  finish();
+  await wait(2000);
   resetAll(bars);
 }

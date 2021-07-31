@@ -43,6 +43,21 @@ a {
   background-color: #000099;
 }
 
+header, footer {
+  background-color: #00003d;
+  color: white;
+  text-align: center;
+  padding: 20px 10px;
+}
+header h1, footer h1 {
+  margin: 0;
+  font-size: 3rem;
+}
+
+footer h1 {
+  font-size: 1.6rem;
+}
+
 /* colors */
 /* fonts */
 .bars-container {
@@ -130,6 +145,28 @@ input {
 #set-value:active {
   background-color: white;
   color: #00003d;
+}
+
+/* colors */
+/* fonts */
+.algos {
+  /* border: 1px solid red; */
+  padding: 20px 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.algos .button {
+  background-color: #00003d;
+  color: white;
+  font-size: 1.4rem;
+  font-weight: bold;
+  padding: 0.6em 0.4em;
+  border: 1px solid #00003d;
+  border-radius: 0.25em;
+}
+.algos .selected {
+  background-color: #000099;
 }
 
 /*# sourceMappingURL=main.css.map */
