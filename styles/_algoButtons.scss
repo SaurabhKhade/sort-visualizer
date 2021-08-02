@@ -3,9 +3,13 @@
 .algos {
   /* border: 1px solid red; */
   padding: 20px 10px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+  /* display: flex; */
+  /* flex-wrap: wrap; */
+  /* justify-content: space-evenly; */
+  display: grid;
+  grid-template-columns: repeat(auto-fill,110px);
+  grid-row-gap: 10px;
+  grid-column-gap: 5px;
   
   .button {
     background-color: $dark;

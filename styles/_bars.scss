@@ -6,6 +6,7 @@
   margin: 20px 5px;
   padding: 10px 10px 40px 10px;
   border-radius: .5em;
+  position: relative;
 }
 
 .bars-wrapper {
@@ -28,4 +29,14 @@
     position: absolute;
     bottom: -15px;
   }
+}
+
+.pivot {
+  position: absolute;
+  border: .5px solid white;
+  left: 0;
+  right: 0;
+  top: -2%;
+  display: none;
+  width: 100%;
 }

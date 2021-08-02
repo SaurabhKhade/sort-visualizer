@@ -9,6 +9,10 @@ function renderBars(array) {
   array.forEach((number,index)=>{
     create(number,index,max,width,step,gap);
   });
+  let hr = document.createElement('hr');
+  hr.classList.add('pivot');
+  
+  document.querySelector('#bars-wrapper').appendChild(hr);
 }
 
 function create(number,index,max,width,step,gap) {
