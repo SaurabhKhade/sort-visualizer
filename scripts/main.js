@@ -1,4 +1,4 @@
-let size = 10;
+let size = 15;
 let numbers = random(size);
 renderBars(numbers);
 let speed = 600;

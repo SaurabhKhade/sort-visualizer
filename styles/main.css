@@ -66,6 +66,7 @@ footer h1 {
   margin: 20px 5px;
   padding: 10px 10px 40px 10px;
   border-radius: 0.5em;
+  position: relative;
 }
 
 .bars-wrapper {
@@ -87,6 +88,16 @@ footer h1 {
   content: attr(data-value);
   position: absolute;
   bottom: -15px;
+}
+
+.pivot {
+  position: absolute;
+  border: 0.5px solid white;
+  left: 0;
+  right: 0;
+  top: -2%;
+  display: none;
+  width: 100%;
 }
 
 /* colors */
@@ -152,9 +163,13 @@ input {
 .algos {
   /* border: 1px solid red; */
   padding: 20px 10px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+  /* display: flex; */
+  /* flex-wrap: wrap; */
+  /* justify-content: space-evenly; */
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 110px);
+  grid-row-gap: 10px;
+  grid-column-gap: 5px;
 }
 .algos .button {
   background-color: #00003d;

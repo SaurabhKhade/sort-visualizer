@@ -1,2 +1,4 @@
-/styles/*.scss
-/styles/*.css.map
+/styles/main.css
+/styles/main.css.map
+/temp.*
+/test.*
